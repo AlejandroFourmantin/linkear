@@ -74,3 +74,298 @@ body {
     color: #000;
     transform: translateY(-1px);
 }
+
+
+/* ==========================================================
+   UTILIDADES & COLORES
+   ========================================================== */
+.text-accent {
+    color: #38b6ff !important;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #38b6ff 0%, #8ee0ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-outline-custom {
+    color: #f8f9fa;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 8px 18px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-custom:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* ==========================================================
+   HERO CAROUSEL SECTION
+   ========================================================== */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+#heroCarousel .carousel-item {
+    height: 78vh;
+    min-height: 520px;
+    max-height: 720px;
+    position: relative;
+}
+
+#heroCarousel .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.72);
+}
+
+/* Capa de degradado sobre la imagen para contraste y fusión suave con el fondo */
+.carousel-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(11, 15, 25, 0.4) 0%,
+        rgba(11, 15, 25, 0.75) 60%,
+        #0b0f19 100%
+    );
+    pointer-events: none;
+}
+
+/* Centrado vertical del contenido del slide */
+#heroCarousel .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+    padding: 0;
+    z-index: 10;
+}
+
+/* Badge píldora moderna estilo tech */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(56, 182, 255, 0.1);
+    border: 1px solid rgba(56, 182, 255, 0.3);
+    color: #e2e8f0;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 6px 16px;
+    border-radius: 50px;
+    backdrop-filter: blur(6px);
+}
+
+.hero-title {
+    font-size: clamp(2rem, 4.2vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 1.6vw, 1.2rem);
+    color: #94a3b8;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Indicadores en forma de cápsula */
+#heroCarousel .carousel-indicators {
+    bottom: 24px;
+    margin-bottom: 0;
+}
+
+#heroCarousel .carousel-indicators [data-bs-target] {
+    width: 24px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#heroCarousel .carousel-indicators .active {
+    width: 48px;
+    background-color: #38b6ff;
+}
+
+/* Botones de navegación (anterior/siguiente) con efecto glassmorphism */
+.carousel-control-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(18, 24, 38, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: #ffffff;
+    transition: all 0.25s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-icon-box,
+.carousel-control-next:hover .carousel-control-icon-box {
+    background-color: #38b6ff;
+    border-color: #38b6ff;
+    color: #0b0f19;
+    transform: scale(1.08);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 6%;
+    opacity: 0.75;
+    transition: opacity 0.2s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+/* Adaptabilidad en pantallas móviles */
+@media (max-width: 767.98px) {
+    #heroCarousel .carousel-item {
+        height: 560px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none; /* En móvil se usa el deslizamiento táctil nativo */
+    }
+}
+
+
+/* ==========================================================
+   SECCIÓN DE SERVICIOS
+   ========================================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+.services-section {
+    position: relative;
+}
+
+.section-title {
+    font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.section-subtitle {
+    font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+    color: #94a3b8;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Tarjetas de Servicio */
+.service-card {
+    background-color: #121826;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2.25rem 2rem;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+    transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(56, 182, 255, 0.35);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45), 0 0 25px rgba(56, 182, 255, 0.12);
+}
+
+/* Icono enmarcado */
+.service-icon-box {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: rgba(56, 182, 255, 0.1);
+    border: 1px solid rgba(56, 182, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #38b6ff;
+    transition: all 0.25s ease;
+}
+
+.service-card:hover .service-icon-box {
+    background-color: #38b6ff;
+    color: #0b0f19;
+    transform: scale(1.06);
+}
+
+/* Píldora de categoría en la card */
+.service-pill-badge {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #94a3b8;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 5px 12px;
+    border-radius: 50px;
+}
+
+.service-card-title {
+    color: #ffffff;
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.service-card-desc {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Lista de características del servicio */
+.service-features-list li {
+    color: #cbd5e1;
+    font-size: 0.92rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+}
+
+.service-features-list li i {
+    font-size: 1rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 767.98px) {
+    .service-card {
+        padding: 1.75rem 1.5rem;
+    }
+}
