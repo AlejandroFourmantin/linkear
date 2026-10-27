@@ -3,3 +3,74 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #0b0f19;
+    color: #f8f9fa;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Barra de navegación flotante estilo cápsula */
+.navbar-custom {
+    background-color: #121826;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Tamaño adaptable (responsive) para el logo */
+.logo {
+    height: 32px; /* Tamaño cómodo y compacto en celulares */
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.25s ease, height 0.2s ease-in-out;
+}
+
+/* Efecto sutil de movimiento al pasar el cursor sobre el logo */
+.navbar-brand:hover .logo {
+    transform: translateY(-2px) scale(1.04);
+}
+
+/* En computadoras y pantallas grandes (Desktop) */
+@media (min-width: 992px) {
+    .logo {
+        height: 42px; /* Un poco más pequeño y estilizado en PC */
+    }
+}
+
+/* Ajuste para el menú desplegable en celulares */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+/* Estilos de los enlaces */
+.navbar-custom .nav-link {
+    color: #cbd5e1;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: #38b6ff;
+}
+
+/* Botón de acción con el color celeste de Linkear */
+.btn-linkear {
+    background-color: #38b6ff;
+    color: #0d1117;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 8px 18px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-linkear:hover {
+    background-color: #2ea0e6;
+    color: #000;
+    transform: translateY(-1px);
+}
