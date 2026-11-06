@@ -658,3 +658,181 @@ body {
         animation: none;
     }
 }
+
+/* ==========================================================
+   SECCIÓN QUIÉNES SOMOS
+   ========================================================== */
+.about-text {
+    color: #94a3b8;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.about-text strong {
+    color: #ffffff;
+}
+
+.about-value {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background-color: #121826;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 0.85rem 1rem;
+    color: #e2e8f0;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.about-value i {
+    font-size: 1.2rem;
+}
+
+.about-value:hover {
+    border-color: rgba(56, 182, 255, 0.35);
+    transform: translateY(-3px);
+}
+
+/* Tarjetas del equipo */
+.team-card {
+    background-color: #121826;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2.25rem 1.5rem;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+    transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(56, 182, 255, 0.35);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45), 0 0 25px rgba(56, 182, 255, 0.12);
+}
+
+/* Círculo con la inicial (reemplaza la foto) */
+.team-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #38b6ff 0%, #8ee0ff 100%);
+    color: #0b0f19;
+    font-size: 2.4rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 6px rgba(56, 182, 255, 0.12);
+    transition: transform 0.28s ease;
+}
+
+.team-card:hover .team-avatar {
+    transform: scale(1.06);
+}
+
+.team-name {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.team-role {
+    color: #94a3b8;
+    font-size: 0.92rem;
+}
+
+.team-tag {
+    display: inline-block;
+    margin-top: 0.75rem !important;
+    background: rgba(56, 182, 255, 0.1);
+    border: 1px solid rgba(56, 182, 255, 0.3);
+    color: #38b6ff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 4px 12px;
+    border-radius: 50px;
+}
+
+/* ==========================================================
+   SECCIÓN CONFIANZA (números + testimonios)
+   ========================================================== */
+.stats-strip {
+    background: linear-gradient(135deg, rgba(56, 182, 255, 0.08) 0%, rgba(142, 224, 255, 0.03) 100%);
+    border: 1px solid rgba(56, 182, 255, 0.2);
+    border-radius: 20px;
+    padding: 2.25rem 1.5rem;
+}
+
+.stat-number {
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 800;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #38b6ff 0%, #8ee0ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-top: 0.35rem;
+}
+
+.testimonial-card {
+    background-color: #121826;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2rem 1.75rem;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+    transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(56, 182, 255, 0.35);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45), 0 0 25px rgba(56, 182, 255, 0.12);
+}
+
+.testimonial-quote {
+    font-size: 2.8rem;
+    line-height: 1;
+    color: #38b6ff;
+    opacity: 0.5;
+}
+
+.testimonial-text {
+    color: #cbd5e1;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.testimonial-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(56, 182, 255, 0.15);
+    border: 1px solid rgba(56, 182, 255, 0.35);
+    color: #38b6ff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.testimonial-name {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.testimonial-role {
+    color: #64748b;
+    font-size: 0.85rem;
+}
