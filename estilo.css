@@ -916,3 +916,18 @@ body {
     color: #64748b;
     font-size: 0.85rem;
 }
+
+/* Línea de empresa en las tarjetas de vacantes
+   (nombre de la empresa o "Empresa confidencial") */
+.vacancy-company {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.vacancy-company i {
+    color: #38b6ff;
+}
