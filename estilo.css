@@ -931,3 +931,61 @@ body {
 .vacancy-company i {
     color: #38b6ff;
 }
+
+
+/* ==========================================================
+   POSTULANTES
+   ========================================================== */
+.postulantes-box {
+    background-color: #121826;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+}
+
+.postulantes-text {
+    color: #94a3b8;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* ==========================================================
+   PREGUNTAS FRECUENTES (acordeón de Bootstrap)
+   ========================================================== */
+.faq-accordion {
+    --bs-accordion-bg: #121826;
+    --bs-accordion-border-color: rgba(255, 255, 255, 0.08);
+    --bs-accordion-btn-color: #ffffff;
+    --bs-accordion-color: #94a3b8;
+    --bs-accordion-active-bg: #121826;
+    --bs-accordion-active-color: #38b6ff;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.2rem rgba(56, 182, 255, 0.25);
+}
+
+.faq-accordion .accordion-item {
+    border-radius: 14px !important;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.faq-accordion .accordion-button {
+    font-weight: 600;
+    padding: 1.15rem 1.4rem;
+}
+
+.faq-accordion .accordion-body {
+    line-height: 1.7;
+    padding: 0 1.4rem 1.25rem;
+}
+
+/* ==========================================================
+   CIERRE / LLAMADO A LA ACCIÓN
+   ========================================================== */
+.cta-final {
+    background: linear-gradient(135deg, rgba(56, 182, 255, 0.12) 0%, rgba(142, 224, 255, 0.04) 100%);
+    border: 1px solid rgba(56, 182, 255, 0.25);
+    border-radius: 24px;
+    padding: 3.5rem 1.5rem;
+}
